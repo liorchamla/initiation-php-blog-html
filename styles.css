@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Alata:regular);
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic');
+
+* {
+  box-sizing: border-box;
+  font-family: Alata;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Merriweather;
+}
+
+header {
+  background-color: #eee;
+}
+
+header div,
+main {
+  width: 80%;
+  margin: auto;
+}
+
+main {
+  padding-top: 2em;
+}
+
+header div {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+}
+
+header a.title {
+  font-size: 1.5em;
+}
+
+.articles article {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+article::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.articles article img,
+.article article img {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.comment {
+  margin-bottom: 30px;
+}
+
+.comment span.author {
+  margin-right: 10px;
+}
+
+.comment small {
+  color: #ddd;
+}
+
+.comment blockquote {
+  border-left: 5px solid #ddd;
+  padding-left: 10px;
+  font-style: italic;
+  margin-left: 0;
+}
+
+form {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 1em 2em;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 5px 0;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: #eee;
+  text-align: center;
+  padding: 2em 0;
+}
